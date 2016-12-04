@@ -23,5 +23,3 @@ height: 414px
 изображения
 width 250px
 height 183px
-
-test
