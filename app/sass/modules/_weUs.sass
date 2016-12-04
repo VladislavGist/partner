@@ -1,0 +1,42 @@
+section.textBlock 
+	padding: 108px 0
+	h2
+		margin-bottom: 30px
+	p
+		margin-bottom: 55px
+		margin-right: 13px
+	a
+		color: $colorAc
+		&:hover
+			color: #090909
+	.imgBlock
+		height: 339px
+		width: 386px
+		background: $colorAc
+
+		img
+			margin-top: -14px
+			margin-left: -20px
+	.imgBlock.textBlock
+		float: right
+		margin-left: 46px
+		margin-bottom: 20px
+
+section.textBlock.noBottom
+	padding: 40px 0 0
+
+@media screen and (max-width: 992px)
+	section.textBlock 
+		padding: 50px 0
+		h2, p
+			text-align: center
+		a
+			display: block
+			text-align: center
+		.imgBlock
+			margin-top: 40px
+			margin-left: auto
+			margin-right: auto
+		.pTextBlock
+			text-align: left
+				

@@ -1,0 +1,87 @@
+section.gallery
+	h2
+		margin-bottom: 47px
+	.thisGallery
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		.item
+			padding: 0
+			width: 256px
+			height: 244px
+			overflow: hidden
+			margin-bottom: 40px
+			margin-right: 22px
+			transition: box-shadow .6s ease
+			display: block !important
+			&:hover
+				box-shadow: 0 2px 10px rgba(0,0,0,.7)
+			a
+				display: block !important
+			img
+				padding: 0
+				border-radius: 0
+				display: block !important
+.fancybox-inner img
+	padding: 0
+
+.fancybox-wrap
+	width: 436px !important
+	height: 414px !important
+	overflow: hidden !important
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+
+.fancybox-skin
+	border-radius: 0
+
+.fancybox-outer
+	height: 414px
+
+.fancybox-prev span
+	background: url("../images/fancy_left.png") no-repeat
+	width: 30px
+	height: 30px
+	display: block
+	visibility: visible
+	opacity: .6
+	transition: opacity .3s ease
+	&:hover
+		opacity: 1
+
+.fancybox-next span
+	background: url("../images/fancy_right.png") no-repeat
+	width: 30px
+	height: 30px
+	display: block
+	visibility: visible
+	opacity: .6
+	transition: opacity .3s ease
+	&:hover
+		opacity: 1
+
+.fancybox-item.fancybox-close
+	background: url("../images/fancy-close.jpg") no-repeat
+	top: 0
+	right: -2px
+	opacity: .6
+	transition: opacity .3s ease
+	&:hover
+		opacity: 1
+
+.fancybox-nav span
+	top: 54%
+
+@media screen and (max-width: 1200px)
+	section.gallery .thisGallery .item
+		margin-right: 52px
+
+@media screen and (max-width: 992px)
+	section.gallery
+		text-align: center
+	section.gallery .thisGallery .item
+		margin-right: initial
+	

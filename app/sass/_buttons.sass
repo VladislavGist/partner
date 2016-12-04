@@ -1,0 +1,43 @@
+.button-1
+	display: inline-block
+	text-align: center
+	font-size: 19px
+	padding: 12px 43px 14px
+	background-color: $colorAc
+	color: white
+	text-decoration: none
+	font-family: 'WhitneyMedium', sans-serif
+	@extend .transition
+	&:hover
+		background-color: $colorAcHover
+		color: white
+	&:focus
+		color: white
+		text-decoration: none
+
+.button-2
+	display: block
+	text-align: center
+	@extend .transition
+	&:hover
+		background-color: $colorAc
+		color: white
+	&:focus
+		color: white
+		text-decoration: none
+
+.button-3
+	display: block
+	text-align: center
+	@extend .transition
+	&:hover
+		background-color: $colorAc
+		color: white
+	&:focus
+		color: white
+		text-decoration: none
+
+
+@media screen and (max-width: 992px)
+	.button-1
+		font-size: 14px

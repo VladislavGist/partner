@@ -1,0 +1,36 @@
+<!--navbar-->
+nav.navbar.navbar-default(role='navigation')
+	.container
+		// Brand and toggle get grouped for better mobile display
+		.navbar-header
+			button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href='index.html')
+				img(src="images/logo-nav.png", alt="")
+		// Collect the nav links, forms, and other content for toggling
+		#bs-example-navbar-collapse-1.collapse.navbar-collapse
+			ul.nav.navbar-nav
+				li.active
+					a(href='#m_weUs', class="anchor") О компании
+				li
+					a(href='#m_services', class="anchor") Услуги
+				li
+					a(href='#m_reviews', class="anchor") Отзывы
+				li
+					a(href='#m_catalog', class="anchor") Каталог
+				li
+					a(href='#m_articles', class="anchor") Статьи
+				li
+					a(href='#m_contacts', class="anchor") Контакты
+
+			ul
+				li.phone
+					div
+						img(src="images/ic-phone.png", alt="img")
+						p +7 (4742) 
+							span 52-22-77
+							a(href="/" data-toggle="modal" data-target="#modal-1") Заказать звонок
+<!--navbar CLOSE-->

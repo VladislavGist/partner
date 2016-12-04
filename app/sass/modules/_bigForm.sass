@@ -1,0 +1,73 @@
+section.bigForm
+	padding: 23px 0
+	h2
+		margin-bottom: 27px
+	form#bigForm
+		padding: 39px 0 35px
+		position: relative
+		input
+			width: 48.4%
+			font-family: 'WhitneyLight'
+			font-size: 16px
+			color: #090909
+			line-height: 18px
+			padding: 16px 16px 16px 16px
+			border: 1px solid #cdcdcd
+			margin-bottom: 23px
+		input.input-2
+			float: right
+			
+		textarea
+			width: 100%
+			font-family: 'WhitneyLight'
+			font-size: 16px
+			color: #090909
+			line-height: 18px
+			padding: 16px 16px 16px 16px
+			border: 1px solid #cdcdcd
+			resize: none
+			margin-bottom: 23px
+		button
+			float: right
+		//errors
+		#name-error
+			position: absolute
+			left: 0
+			top: 92px
+			font-family: 'WhitneyLight'
+			font-size: 12px
+			color: red
+		#labelRev-error
+			position: absolute
+			font-family: 'WhitneyLight'
+			font-size: 12px
+			color: red
+			top: 92px
+			left: 588px
+		#bigFormTextArea-error
+			position: absolute
+			font-family: 'WhitneyLight'
+			font-size: 12px
+			color: red
+			left: 0
+			top: 347px
+
+@media screen and (max-width: 1200px)
+	#labelRev-error
+		left: 486px !important
+
+@media screen and (max-width: 992px)
+	#labelRev-error
+		left: 372px !important
+	section.bigForm
+		h2, p
+			text-align: center
+	section.bigForm form#bigForm button
+		float: none
+		margin: 0 auto
+		display: block
+
+
+@media screen and (max-width: 753px)
+	#labelRev-error
+		left: 52% !important

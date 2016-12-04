@@ -1,0 +1,40 @@
+section.services
+	padding: 50px 0 50px
+	h2
+		margin-bottom: 28px
+	.tringle
+		width: 270px
+		height: 230px
+		background: #f0f0f0
+		margin-top: 46px
+	#load
+		display: none
+	.dn-file
+		color: $colorAc
+		font-family: 'WhitneyLight', sans-serif
+		font-weight: 100
+		position: relative
+		text-decoration: underline
+		cursor: pointer
+		transition: color .3s ease
+		margin-left: 88px
+		margin-top: 97px
+		&:hover
+			color: #333
+		&:before
+			content: ""
+			background: url("../images/lile.png") no-repeat
+			display: inline-block
+			width: 26px
+			height: 26px
+			position: absolute
+			top: 0
+			left: -35px
+
+@media screen and (max-width: 992px)
+	section.services
+		h2, p
+			text-align: center
+		.tringle
+			margin-right: auto
+			margin-left: auto

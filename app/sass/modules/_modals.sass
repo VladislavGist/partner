@@ -1,0 +1,69 @@
+#modal-1, #modal-thank
+	width: 100%
+	margin: 100px auto 0
+	overflow: visible
+	.close
+		width: 25px
+		height: 25px
+		background: #f8f8f8 url("../images/modal-btstr-close.png") no-repeat
+		opacity: 1
+		top: -7px
+		position: absolute
+		right: -9px
+		box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4)
+		transition: box-shadow .5s ease
+		&:hover
+			box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5)
+	.modal-content
+		padding: 43px 70px 35px
+		border-radius: 0
+		background: $colorSpace2
+		box-shadow: none
+		width: 600px
+		margin: 0 auto
+	.modal-header 
+		padding: 0
+		border: none
+	.modal-title 
+		font-size: 30px
+		color: black
+		font-family: 'WhitneySemibld', sans-serif
+	.modal-subtitle
+		font-size: 16px
+		color: black
+		margin: 33px 0
+		font-family: 'WhitneyBook', sans-serif
+	.modal-body
+		padding: 0
+	form
+		position: relative
+		input
+			display: block
+			width: 100%
+			height: 45px
+			padding: 0 15px
+			color: $colorSpace1
+			margin-bottom: 19px
+			border-radius: 0
+			border: 1px solid #d1d1d1
+			background: white
+	#input-1-name-error
+		position: absolute
+		top: 45px
+		left: 0
+		font-size: 12px
+		color: red
+	#input-1-phone-error
+		position: absolute
+		left: 0
+		top: 109px
+		left: 0
+		font-size: 12px
+		color: red
+
+
+#modal-thank
+	p#myModalLabel.modal-title-thank
+		font-size: 30px
+		color: black
+		text-align: center

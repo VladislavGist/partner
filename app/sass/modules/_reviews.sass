@@ -1,0 +1,83 @@
+section.reviews
+	padding: 51px 0 90px
+	background: url("../images/rev-bg.jpg") no-repeat
+	background-size: cover
+	background-attachment: fixed
+	h2
+		margin-bottom: 94px
+		display: inline-block
+	.allRevBtn
+		float: right
+		margin-right: 90px
+		color: $colorAc
+		transition: color .3s ease
+		line-height: 39px
+		&:hover
+			color: black
+	.rew-slider
+		.item
+			.wrap-face
+				width: 220px
+				height: 220px
+				border-radius: 50%
+				border: 4px solid $colorAc
+				margin: 0 auto 11px
+				position: relative
+				overflow: hidden
+				p
+					position: absolute
+					text-align: center
+					margin: auto
+					top: 91px
+					left: 0
+					right: 0
+				img
+					position: absolute
+					top: 0
+					padding: 0
+			p.title 
+				font-family: 'WhitneyMedium', sans-serif
+				text-align: center
+				margin-bottom: 27px
+			p.content
+				font-size: 17px
+				font-family: 'WhitneyLight', sans-serif
+				line-height: 21px
+				text-align: center
+				max-width: 450px
+				margin: 0 auto
+				padding: 0 20px
+		.slick-prev
+			height: 40px
+			width: 56px
+			height: 50px
+			background: url("../images/slider-left.png") no-repeat
+			transition: margin .6s ease
+			&:hover
+				background: url("../images/slider-left-hover.png") no-repeat
+				margin-left: -10px
+		.slick-prev:before
+			content: ''
+		.slick-next
+			height: 40px
+			width: 56px
+			height: 50px
+			background: url("../images/slider-right.png") 37px 0 no-repeat
+			transition: margin .6s ease
+			&:hover
+				background: url("../images/slider-right-hover.png") 37px 0 no-repeat
+				margin-right: -10px
+		.slick-next:before
+			content: ''
+
+@media screen and (max-width: 992px)
+	section.reviews
+		padding: 50px 0 50px
+		h2
+			text-align: center
+			
+@media screen and (max-width: 768px)
+	.slick-prev
+		left: 9px
+	.slick-next
+		right: 9px

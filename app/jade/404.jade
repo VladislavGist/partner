@@ -1,0 +1,15 @@
+extends modules/template
+block title 
+	title Партнер
+
+block content
+	.wrapper
+		.allContent
+			include modules/navbar2
+			.container
+				.errors
+					p.error-four 404
+					p.error-text Страница не найдена.
+					a(href="index.html") Вернуться на главную.
+	
+		include modules/footer
